@@ -3,7 +3,7 @@ import { getInput, info, setFailed, setOutput } from "@actions/core";
 import { AppRunnerClient, CreateServiceCommand, ListServicesCommand, ListServicesCommandOutput, UpdateServiceCommand, DescribeServiceCommand, ImageRepositoryType } from "@aws-sdk/client-apprunner";
 import { debug } from '@actions/core';
 
-const supportedRuntime = ['NODEJS_12', 'PYTHON_3'];
+const supportedRuntime = ['NODEJS_16', 'PYTHON_3'];
 
 const OPERATION_IN_PROGRESS = "OPERATION_IN_PROGRESS";
 const MAX_ATTEMPTS = 120;
